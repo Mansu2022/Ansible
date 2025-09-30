@@ -1,0 +1,31 @@
+192.168.2.1                                        #server ip
+172.35.36.96
+
+[mongodb]                                          #group
+172.31.42.158                                      #server ip
+
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+NAME=Sivakumar-inventory
+
+[mysql]                                                 #group
+roboshop-us-dev-db-mysql-01.joindevops.online           #server-name
+roboshop-us-dev-db-mysql-02.joindevops.online
+
+[cart]
+roboshop-in-prod-app-cart-01.joindevops.online
+roboshop-in-prod-app-cart-02.joindevops.online
+roboshop-in-prod-app-cart-03.joindevops.online
+
+[user]
+roboshop-in-prod-app-user-01.joindevops.online
+roboshop-in-prod-app-user-02.joindevops.online
+
+[db:children]                                          #group of groups
+mongodb
+mysql
+
+[app:children]
+cart
+user
