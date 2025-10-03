@@ -1,8 +1,8 @@
-192.168.2.1                                        #server ip
+192.168.2.1                                        #server ip a.k.a host
 172.35.36.96
 
 [mongodb]                                          #group
-172.31.42.158                                      #server ip
+172.31.42.158                                      #server ip a.k.a host
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
@@ -10,7 +10,7 @@ MONGO_DB=categories
 NAME=Sivakumar-inventory
 
 [mysql]                                                 #group
-roboshop-us-dev-db-mysql-01.joindevops.online           #server-name
+roboshop-us-dev-db-mysql-01.joindevops.online           #server-name a.k.a host
 roboshop-us-dev-db-mysql-02.joindevops.online
 
 [cart]
